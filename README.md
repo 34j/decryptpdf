@@ -37,7 +37,24 @@ Simple CLI tool for decrypting PDF files.
 Install this via pip (or your favourite package manager):
 
 ```shell
-pip install decryptpdf
+pipx install decryptpdf
+```
+
+## Usage
+
+```shell
+> decryptpdf -h
+Usage: decryptpdf [OPTIONS] PATH
+
+  Decrypts a PDF file.
+
+  If PATH is a directory, recursively searches for PDF files. If PATH is a
+  file and does not exist, checks if PATH with ".pdf" extension exists. If the
+  file is not encrypted, skips it.
+
+Options:
+  -h, --help           Show this message and exit.
+  -p, --password TEXT  The password to decrypt the PDF file.
 ```
 
 ## Contributors ✨

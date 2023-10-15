@@ -18,12 +18,18 @@ packages = [
     { include = "decryptpdf", from = "src" },
 ]
 
+[tool.poetry.scripts]
+decryptpdf = "decryptpdf.cli:cli"
+
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/34j/decryptpdf/issues"
 "Changelog" = "https://github.com/34j/decryptpdf/blob/main/CHANGELOG.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
+click = "^8.1.7"
+pikepdf = "^8.5.1"
+tqdm = "^4.66.1"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = ">=3"
