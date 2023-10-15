@@ -7,16 +7,16 @@ documentation: true
 email: 34j.95a2p@simplelogin.com
 full_name: 34j
 github_username: 34j
-initial_commit: true
+initial_commit: false
 open_source_license: CC0 1.0 Universal
-open_with_vscode: true
+open_with_vscode: false
 package_name: decryptpdf
 project_name: decryptpdf
 project_short_description: Simple CLI tool for decrypting PDF files.
 project_slug: decryptpdf
-run_poetry_install: true
-setup_github: true
-setup_pre_commit: true
-setup_venv: true
+run_poetry_install: false
+setup_github: false
+setup_pre_commit: false
+setup_venv: false
 venv_version: '3.10'
 
