@@ -1,0 +1,7 @@
+# Changelog
+
+## v0.1.0 (2023-10-15)
+
+### Feature
+
+- Migrate code from 34j/pdfdecrypt (#1) ([`7ae48b6`](https://github.com/34j/decryptpdf/commit/7ae48b602460c9e4528249fd69c55f6160f1e48d))
