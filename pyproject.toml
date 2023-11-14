@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "decryptpdf"
-version = "0.1.4"
+version = "0.1.5"
 description = "Simple CLI tool for decrypting PDF files."
 authors = ["34j <34j.95a2p@simplelogin.com>"]
 license = "CC0 1.0 Universal"
