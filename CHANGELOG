@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.13 (2024-02-02)
+
+### Fix
+
+- Update dependency pikepdf to v8.12.0 (#68) ([`b3963f8`](https://github.com/34j/decryptpdf/commit/b3963f8de68f0925f5c4aee7a005d96ba4bc24ca))
+
 ## v0.1.12 (2024-01-01)
 
 ### Fix
