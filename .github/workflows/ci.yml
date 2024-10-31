@@ -57,7 +57,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: "poetry"
       - run: echo '${{ steps.setup-python.outputs.cache-hit }}' # true if cache-hit occurred on the primary key
-      - uses: snok/install-poetry@v1.3.4
+      - uses: snok/install-poetry@v1.4.1
       - name: Install Dependencies
         run: poetry install
         shell: bash
