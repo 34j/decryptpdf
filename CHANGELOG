@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.18 (2024-11-15)
+
+### Fix
+
+- Update dependency tqdm to v4.67.0 (#98) ([`f267947`](https://github.com/34j/decryptpdf/commit/f2679477dc9e25b8d52a3033343faa4fcd1b41f9))
+
 ## v0.1.17 (2024-10-30)
 
 ### Fix
