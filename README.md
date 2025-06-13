@@ -82,7 +82,7 @@ pipx install decryptpdf
 │    --help                -h                            Show this message and     │
 │                                                        exit.                     │
 ╰──────────────────────────────────────────────────────────────────────────────────╯
-
+```
 
 ## Contributors ✨
 
@@ -105,4 +105,3 @@ This package was created with
 [Copier](https://copier.readthedocs.io/) and the
 [browniebroke/pypackage-template](https://github.com/browniebroke/pypackage-template)
 project template.
-```
