@@ -61,26 +61,28 @@ pipx install decryptpdf
  does not exist, checks if PATH with ".pdf" extension exists. If the file is not
  encrypted, skips it.
 
-╭─ Arguments ─────────────────────────────────────────────────────────────────────────╮
-│ *    path      PATH  [default: None] [required]                                     │
-╰─────────────────────────────────────────────────────────────────────────────────────╯
-╭─ Options ───────────────────────────────────────────────────────────────────────────╮
-│ *  --password            -p                      TEXT  The password to decrypt the  │
-│                                                        PDF file.                    │
-│                                                        [default: None]              │
-│                                                        [required]                   │
-│    --overwrite           -o  --no-overwrite  -n        Do not overwrite the         │
-│                                                        original file, save as       │
-│                                                        .decrypted.pdf               │
-│                                                        [default: o]                 │
-│    --install-completion                                Install completion for the   │
-│                                                        current shell.               │
-│    --show-completion                                   Show completion for the      │
-│                                                        current shell, to copy it or │
-│                                                        customize the installation.  │
-│    --help                -h                            Show this message and exit.  │
-╰─────────────────────────────────────────────────────────────────────────────────────╯
-```
+╭─ Arguments ──────────────────────────────────────────────────────────────────────╮
+│ *    path      PATH  [default: None] [required]                                  │
+╰──────────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────────╮
+│ *  --password            -p                      TEXT  The password to decrypt   │
+│                                                        the PDF file.             │
+│                                                        [default: None]           │
+│                                                        [required]                │
+│    --overwrite           -o  --no-overwrite  -n        Overwrite the original    │
+│                                                        file, or save decrypted   │
+│                                                        file as .decrypted.pdf    │
+│                                                        [default: o]              │
+│    --install-completion                                Install completion for    │
+│                                                        the current shell.        │
+│    --show-completion                                   Show completion for the   │
+│                                                        current shell, to copy it │
+│                                                        or customize the          │
+│                                                        installation.             │
+│    --help                -h                            Show this message and     │
+│                                                        exit.                     │
+╰──────────────────────────────────────────────────────────────────────────────────╯
+
 
 ## Contributors ✨
 
@@ -103,3 +105,4 @@ This package was created with
 [Copier](https://copier.readthedocs.io/) and the
 [browniebroke/pypackage-template](https://github.com/browniebroke/pypackage-template)
 project template.
+```

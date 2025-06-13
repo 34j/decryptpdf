@@ -31,7 +31,8 @@ def cli(
         typer.Option(
             "-o/-n",
             "--overwrite/--no-overwrite",
-            help="Do not overwrite the original file, save as .decrypted.pdf",
+            help="Overwrite the original file, "
+            "or save decrypted file as .decrypted.pdf",
         ),
     ] = True,
 ) -> None:
