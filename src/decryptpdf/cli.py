@@ -9,6 +9,7 @@ from . import decrypt_pdf
 app = typer.Typer(
     name="decryptpdf",
     help="Decrypt PDF files using a password.",
+    context_settings={"help_option_names": ["-h", "--help"]},
 )
 
 
@@ -23,6 +24,14 @@ def cli(
             prompt=True,
             hide_input=True,
             help="The password to decrypt the PDF file.",
+        ),
+    ],
+    overwrite: Annotated[
+        bool,
+        typer.Option(
+            "-o/-n",
+            "--overwrite/--no-overwrite",
+            help="Do not overwrite the original file, save as .decrypted.pdf",
         ),
     ],
 ) -> None:
@@ -50,7 +59,10 @@ def cli(
 
     pbar = tqdm(input_paths, desc="Decrypting PDF files", disable=len(input_paths) == 1)
     for input_path in pbar:
-        output_path = input_path.with_suffix(".decrypted.pdf")
+        if overwrite:
+            output_path = input_path
+        else:
+            output_path = input_path.with_suffix(".decrypted.pdf")
         try:
             decrypt_pdf(input_path, output_path, password)
         except Exception as e:

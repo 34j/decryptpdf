@@ -21,7 +21,9 @@ class TestMain(TestCase):
                 ),
             )
             runner = CliRunner()
-            result = runner.invoke(app, [filename.as_posix(), "-p", "user_password"])
+            result = runner.invoke(
+                app, [filename.as_posix(), "-p", "user_password", "-n"]
+            )
             self.assertEqual(result.exit_code, 0)
             pdf = pikepdf.open(filename_out)
             self.assertFalse(pdf.is_encrypted)
