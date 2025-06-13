@@ -52,17 +52,34 @@ pipx install decryptpdf
 
 ```shell
 > decryptpdf -h
-Usage: decryptpdf [OPTIONS] PATH
 
-  Decrypts a PDF file.
+ Usage: decryptpdf [OPTIONS] PATH
 
-  If PATH is a directory, recursively searches for PDF files. If PATH is a
-  file and does not exist, checks if PATH with ".pdf" extension exists. If the
-  file is not encrypted, skips it.
+ Decrypts a PDF file.
 
-Options:
-  -h, --help           Show this message and exit.
-  -p, --password TEXT  The password to decrypt the PDF file.
+ If PATH is a directory, recursively searches for PDF files. If PATH is a file and
+ does not exist, checks if PATH with ".pdf" extension exists. If the file is not
+ encrypted, skips it.
+
+╭─ Arguments ─────────────────────────────────────────────────────────────────────────╮
+│ *    path      PATH  [default: None] [required]                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ───────────────────────────────────────────────────────────────────────────╮
+│ *  --password            -p                      TEXT  The password to decrypt the  │
+│                                                        PDF file.                    │
+│                                                        [default: None]              │
+│                                                        [required]                   │
+│    --overwrite           -o  --no-overwrite  -n        Do not overwrite the         │
+│                                                        original file, save as       │
+│                                                        .decrypted.pdf               │
+│                                                        [default: o]                 │
+│    --install-completion                                Install completion for the   │
+│                                                        current shell.               │
+│    --show-completion                                   Show completion for the      │
+│                                                        current shell, to copy it or │
+│                                                        customize the installation.  │
+│    --help                -h                            Show this message and exit.  │
+╰─────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 ## Contributors ✨
