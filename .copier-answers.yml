@@ -11,7 +11,7 @@ github_username: 34j
 has_cli: true
 initial_commit: false
 is_django_package: false
-open_source_license: CC0-1.0
+open_source_license: MIT
 open_with_editor: false
 package_name: decryptpdf
 project_name: decryptpdf
