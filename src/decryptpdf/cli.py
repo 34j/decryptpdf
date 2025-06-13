@@ -1,24 +1,44 @@
 from pathlib import Path
+from typing import Annotated
 
-import click
+import typer
 from tqdm import tqdm
 
 from . import decrypt_pdf
 
-
-@click.command()
-@click.help_option("-h", "--help")
-@click.argument("path", type=click.Path(exists=True))
-@click.option(
-    "-p",
-    "--password",
-    type=str,
-    prompt=True,
-    hide_input=True,
-    help="The password to decrypt the PDF file.",
+app = typer.Typer(
+    name="decryptpdf",
+    help="Decrypt PDF files using a password.",
+    context_settings={"help_option_names": ["-h", "--help"]},
 )
-def cli(path: str, password: str) -> None:
-    """Decrypts a PDF file.
+
+
+@app.command()
+def cli(
+    path: Annotated[Path, typer.Argument()],
+    password: Annotated[
+        str,
+        typer.Option(
+            "-p",
+            "--password",
+            prompt=True,
+            hide_input=True,
+            help="The password to decrypt the PDF file.",
+        ),
+    ],
+    overwrite: Annotated[
+        bool,
+        typer.Option(
+            "-o/-n",
+            "--overwrite/--no-overwrite",
+            help="Overwrite the original file, "
+            "or save decrypted file as .decrypted.pdf",
+        ),
+    ] = True,
+) -> None:
+    """
+    Decrypts a PDF file.
+
     If PATH is a directory, recursively searches for PDF files.
     If PATH is a file and does not exist, checks if PATH with ".pdf" extension exists.
     If the file is not encrypted, skips it.
@@ -40,7 +60,10 @@ def cli(path: str, password: str) -> None:
 
     pbar = tqdm(input_paths, desc="Decrypting PDF files", disable=len(input_paths) == 1)
     for input_path in pbar:
-        output_path = input_path.with_suffix(".decrypted.pdf")
+        if overwrite:
+            output_path = input_path
+        else:
+            output_path = input_path.with_suffix(".decrypted.pdf")
         try:
             decrypt_pdf(input_path, output_path, password)
         except Exception as e:

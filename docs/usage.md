@@ -1,9 +1,13 @@
+(usage)=
+
 # Usage
 
-To use this package, import it:
+Assuming that you've followed the {ref}`installations steps <installation>`, you're now ready to use this package.
 
-```python
-import decryptpdf
+Call the command line interface:
+
+```bash
+decryptpdf --help
 ```
 
 TODO: Document usage

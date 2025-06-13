@@ -1,22 +1,21 @@
 # Changes here will be overwritten by Copier
-_commit: fdc7a96
-_src_path: gh:34j/pypackage-template-fork
-add_me_as_contributor: false
-copyright_year: '2023'
+_commit: 2e4f7d0
+_src_path: gh:34j/pypackage-template
+cli_name: decryptpdf
+copyright_year: '2025'
 documentation: true
 email: 34j.95a2p@simplelogin.com
 full_name: 34j
 github_username: 34j
+has_cli: true
 initial_commit: false
-open_source_license: CC0 1.0 Universal
-open_with_vscode: false
+is_django_package: false
+open_source_license: MIT
+open_with_editor: false
 package_name: decryptpdf
 project_name: decryptpdf
 project_short_description: Simple CLI tool for decrypting PDF files.
 project_slug: decryptpdf
-run_poetry_install: false
-setup_github: false
+run_uv_sync: false
 setup_pre_commit: false
-setup_venv: false
-venv_version: '3.10'
 

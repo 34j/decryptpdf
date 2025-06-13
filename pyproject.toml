@@ -1,87 +1,110 @@
-[tool.poetry]
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [ "setuptools" ]
+
+[project]
 name = "decryptpdf"
 version = "0.1.18"
 description = "Simple CLI tool for decrypting PDF files."
-authors = ["34j <34j.95a2p@simplelogin.com>"]
-license = "CC0 1.0 Universal"
 readme = "README.md"
-repository = "https://github.com/34j/decryptpdf"
-documentation = "https://decryptpdf.readthedocs.io"
+license = { text = "MIT" }
+authors = [
+  { name = "34j", email = "34j.95a2p@simplelogin.com" },
+]
+requires-python = ">=3.9"
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
-    "Intended Audience :: Developers",
-    "Natural Language :: English",
-    "Operating System :: OS Independent",
-    "Topic :: Software Development :: Libraries",
-]
-packages = [
-    { include = "decryptpdf", from = "src" },
-]
-
-[tool.poetry.scripts]
-decryptpdf = "decryptpdf.cli:cli"
-
-[tool.poetry.urls]
-"Bug Tracker" = "https://github.com/34j/decryptpdf/issues"
-"Changelog" = "https://github.com/34j/decryptpdf/blob/main/CHANGELOG.md"
-
-[tool.poetry.dependencies]
-python = "^3.8"
-click = "^8.1.7"
-pikepdf = "^8.5.1"
-tqdm = "^4.66.1"
-
-[tool.poetry.group.dev.dependencies]
-pre-commit = ">=3"
-pytest = "^7.0"
-pytest-cov = "^3.0"
-
-[tool.poetry.group.docs]
-optional = true
-
-[tool.poetry.group.docs.dependencies]
-myst-parser = ">=0.16"
-sphinx = ">=4.0"
-sphinx-rtd-theme = ">=1.0"
-
-[tool.semantic_release]
-branch = "main"
-version_toml = ["pyproject.toml:tool.poetry.version"]
-version_variable = "src/decryptpdf/__init__.py:__version__"
-build_command = "pip install poetry && poetry build"
-
-[tool.semantic_release.changelog]
-exclude_commit_patterns = [
-    "chore*",
-    "ci*",
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries",
 ]
 
-[tool.semantic_release.changelog.environment]
-keep_trailing_newline = true
+dependencies = [
+  "pikepdf>=9.8.1",
+  "rich>=10",
+  "tqdm>=4.67.1",
+  "typer>=0.15,<1",
+]
+urls."Bug Tracker" = "https://github.com/34j/decryptpdf/issues"
+urls.Changelog = "https://github.com/34j/decryptpdf/blob/main/CHANGELOG.md"
+urls.documentation = "https://decryptpdf.readthedocs.io"
+urls.repository = "https://github.com/34j/decryptpdf"
+scripts.decryptpdf = "decryptpdf.cli:app"
+
+[dependency-groups]
+dev = [
+  "pytest>=8,<9",
+  "pytest-cov>=6,<7",
+]
+docs = [
+  "furo>=2023.5.20; python_version>='3.11'",
+  "myst-parser>=0.16; python_version>='3.11'",
+  "sphinx>=4; python_version>='3.11'",
+  "sphinx-autobuild>=2024,<2025; python_version>='3.11'",
+]
+
+[tool.ruff]
+line-length = 88
+lint.select = [
+  "B",   # flake8-bugbear
+  "D",   # flake8-docstrings
+  "C4",  # flake8-comprehensions
+  "S",   # flake8-bandit
+  "F",   # pyflake
+  "E",   # pycodestyle
+  "W",   # pycodestyle
+  "UP",  # pyupgrade
+  "I",   # isort
+  "RUF", # ruff specific
+]
+lint.ignore = [
+  "D203", # 1 blank line required before class docstring
+  "D212", # Multi-line docstring summary should start at the first line
+  "D100", # Missing docstring in public module
+  "D104", # Missing docstring in public package
+  "D107", # Missing docstring in `__init__`
+  "D401", # First line of docstring should be in imperative mood
+]
+lint.per-file-ignores."conftest.py" = [ "D100" ]
+lint.per-file-ignores."docs/conf.py" = [ "D100" ]
+lint.per-file-ignores."setup.py" = [ "D100" ]
+lint.per-file-ignores."tests/**/*" = [
+  "D100",
+  "D101",
+  "D102",
+  "D103",
+  "D104",
+  "S101",
+]
+lint.isort.known-first-party = [ "decryptpdf", "tests" ]
 
 [tool.pytest.ini_options]
-addopts = "-v -Wdefault --cov=decryptpdf --cov-report=term-missing:skip-covered"
-pythonpath = ["src"]
+addopts = """\
+    -v
+    -Wdefault
+    --cov=decryptpdf
+    --cov-report=term
+    --cov-report=xml
+    """
+pythonpath = [ "src" ]
 
 [tool.coverage.run]
 branch = true
 
 [tool.coverage.report]
 exclude_lines = [
-    "pragma: no cover",
-    "@overload",
-    "if TYPE_CHECKING",
-    "raise NotImplementedError",
-    'if __name__ == "__main__":',
+  "pragma: no cover",
+  "@overload",
+  "if TYPE_CHECKING",
+  "raise NotImplementedError",
+  'if __name__ == "__main__":',
 ]
-
-[tool.isort]
-profile = "black"
-known_first_party = ["decryptpdf", "tests"]
-
-[tool.autoflake]
-expand_star_imports = true
-remove_all_unused_imports = true
 
 [tool.mypy]
 check_untyped_defs = true
@@ -94,8 +117,8 @@ show_error_codes = true
 warn_unreachable = true
 warn_unused_ignores = true
 exclude = [
-    'docs/.*',
-    'setup.py',
+  'docs/.*',
+  'setup.py',
 ]
 
 [[tool.mypy.overrides]]
@@ -106,6 +129,37 @@ allow_untyped_defs = true
 module = "docs.*"
 ignore_errors = true
 
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.semantic_release]
+version_toml = [ "pyproject.toml:project.version" ]
+version_variables = [
+  "src/decryptpdf/__init__.py:__version__",
+  "docs/conf.py:release",
+]
+build_command = """
+pip install uv
+uv lock
+git add uv.lock
+uv build
+"""
+
+[tool.semantic_release.changelog]
+exclude_commit_patterns = [
+  '''chore(?:\([^)]*?\))?: .+''',
+  '''ci(?:\([^)]*?\))?: .+''',
+  '''refactor(?:\([^)]*?\))?: .+''',
+  '''style(?:\([^)]*?\))?: .+''',
+  '''test(?:\([^)]*?\))?: .+''',
+  '''build\((?!deps\): .+)''',
+  '''Merged? .*''',
+  '''Initial [Cc]ommit.*''', # codespell:ignore
+]
+
+[tool.semantic_release.changelog.environment]
+keep_trailing_newline = true
+
+[tool.semantic_release.branches.main]
+match = "main"
+
+[tool.semantic_release.branches.noop]
+match = "(?!main$)"
+prerelease = true
