@@ -3,10 +3,10 @@ from tempfile import TemporaryDirectory
 from unittest import TestCase
 
 import pikepdf
-from click.testing import CliRunner
+from typer.testing import CliRunner
 
 from decryptpdf import decrypt_pdf
-from decryptpdf.cli import cli
+from decryptpdf.cli import app
 
 
 class TestMain(TestCase):
@@ -21,7 +21,7 @@ class TestMain(TestCase):
                 ),
             )
             runner = CliRunner()
-            result = runner.invoke(cli, [filename.as_posix(), "-p", "user_password"])
+            result = runner.invoke(app, [filename.as_posix(), "-p", "user_password"])
             self.assertEqual(result.exit_code, 0)
             pdf = pikepdf.open(filename_out)
             self.assertFalse(pdf.is_encrypted)

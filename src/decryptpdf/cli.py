@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Annotated
 
 import typer
 from tqdm import tqdm
@@ -11,18 +12,20 @@ app = typer.Typer(
 )
 
 
-@typer.command()
-@typer.help_option("-h", "--help")
-@typer.argument("path", type=typer.Path(exists=True))
-@typer.option(
-    "-p",
-    "--password",
-    type=str,
-    prompt=True,
-    hide_input=True,
-    help="The password to decrypt the PDF file.",
-)
-def cli(path: str, password: str) -> None:
+@app.command()
+def cli(
+    path: Annotated[Path, typer.Argument()],
+    password: Annotated[
+        str,
+        typer.Option(
+            "-p",
+            "--password",
+            prompt=True,
+            hide_input=True,
+            help="The password to decrypt the PDF file.",
+        ),
+    ],
+) -> None:
     """
     Decrypts a PDF file.
 
