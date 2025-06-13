@@ -33,7 +33,7 @@ def cli(
             "--overwrite/--no-overwrite",
             help="Do not overwrite the original file, save as .decrypted.pdf",
         ),
-    ],
+    ] = True,
 ) -> None:
     """
     Decrypts a PDF file.
