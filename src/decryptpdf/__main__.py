@@ -1,4 +1,5 @@
-from .cli import cli
+"""Make the CLI runnable using python -m decryptpdf."""
 
-if __name__ == "__main__":
-    cli()
+from .cli import app
+
+app(prog_name="decryptpdf")

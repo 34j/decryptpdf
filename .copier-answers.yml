@@ -1,7 +1,6 @@
 # Changes here will be overwritten by Copier
 _commit: 2e4f7d0
 _src_path: gh:34j/pypackage-template
-add_me_as_contributor: false
 cli_name: decryptpdf
 copyright_year: '2025'
 documentation: true
@@ -18,5 +17,5 @@ project_name: decryptpdf
 project_short_description: Simple CLI tool for decrypting PDF files.
 project_slug: decryptpdf
 run_uv_sync: false
-setup_github: false
 setup_pre_commit: false
+

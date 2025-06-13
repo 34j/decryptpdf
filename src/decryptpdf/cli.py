@@ -1,15 +1,20 @@
 from pathlib import Path
 
-import click
+import typer
 from tqdm import tqdm
 
 from . import decrypt_pdf
 
+app = typer.Typer(
+    name="decryptpdf",
+    help="Decrypt PDF files using a password.",
+)
 
-@click.command()
-@click.help_option("-h", "--help")
-@click.argument("path", type=click.Path(exists=True))
-@click.option(
+
+@typer.command()
+@typer.help_option("-h", "--help")
+@typer.argument("path", type=typer.Path(exists=True))
+@typer.option(
     "-p",
     "--password",
     type=str,
@@ -18,7 +23,9 @@ from . import decrypt_pdf
     help="The password to decrypt the PDF file.",
 )
 def cli(path: str, password: str) -> None:
-    """Decrypts a PDF file.
+    """
+    Decrypts a PDF file.
+
     If PATH is a directory, recursively searches for PDF files.
     If PATH is a file and does not exist, checks if PATH with ".pdf" extension exists.
     If the file is not encrypted, skips it.
