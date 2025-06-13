@@ -15,7 +15,7 @@ from sphinx.ext import apidoc
 project = "decryptpdf"
 copyright = "2025, 34j"
 author = "34j"
-release = "0.0.0"
+release = "0.2.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
