@@ -256,7 +256,7 @@ toml = [
 
 [[package]]
 name = "decryptpdf"
-version = "0.2.0"
+version = "1.0.0rc1"
 source = { editable = "." }
 dependencies = [
     { name = "pikepdf" },
