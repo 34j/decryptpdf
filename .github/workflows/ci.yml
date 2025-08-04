@@ -112,7 +112,7 @@ jobs:
         if: steps.release.outputs.released == 'true'
 
       - name: Publish package distributions to GitHub Releases
-        uses: python-semantic-release/publish-action@b717f67f7e7e9f709357bce5a542846503ce46ec # v10
+        uses: python-semantic-release/publish-action@403a0644d00ec63b5e780942dcbc606b2dc0aa1e # v10
         if: steps.release.outputs.released == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
