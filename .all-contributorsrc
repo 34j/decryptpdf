@@ -9,7 +9,19 @@
   "imageSize": 80,
   "commit": true,
   "commitConvention": "angular",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "naitkris",
+      "name": "Kristian Johansson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45964886?v=4",
+      "profile": "https://github.com/naitkris",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    }
+  ],
   "contributorsPerLine": 7,
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }
