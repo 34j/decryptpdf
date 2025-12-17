@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1.0 (2025-12-17)
+
+### Documentation
+
+- Add naitkris as a contributor for code, and bug ([`d3af1fd`](https://github.com/34j/decryptpdf/commit/d3af1fd8d3b13da8b5f673381c19b44b90219b72))
+
+### Features
+
+- Add support for exension being capital letters (".pdf") ([`6efd37b`](https://github.com/34j/decryptpdf/commit/6efd37b6161630aa6e80aee5fa21b12455de36de))
+
 ## v1.0.0 (2025-06-15)
 
 ## v0.2.0 (2025-06-13)
