@@ -90,8 +90,19 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- prettier-ignore-start -->
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<!-- markdownlint-enable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/naitkris"><img src="https://avatars.githubusercontent.com/u/45964886?v=4?s=80" width="80px;" alt="Kristian Johansson"/><br /><sub><b>Kristian Johansson</b></sub></a><br /><a href="https://github.com/34j/decryptpdf/commits?author=naitkris" title="Code">💻</a> <a href="https://github.com/34j/decryptpdf/issues?q=author%3Anaitkris" title="Bug reports">🐛</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- prettier-ignore-end -->
 
