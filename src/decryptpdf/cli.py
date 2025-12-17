@@ -48,13 +48,15 @@ def cli(
     # If the path is a directory, recursively search for PDF files.
     # If not found, check if the path is a file and if it has a PDF extension.
     if path_.is_dir():
-        input_paths = list(path_.rglob("*.pdf"))
+        input_paths = [p for p in path_.rglob("*") if p.suffix.lower() == ".pdf"]
         if len(input_paths) == 0:
             raise FileNotFoundError(f"No PDF files found in {path_}.")
-    elif path_.exists():
+    elif path_.exists() and path_.suffix.lower() == ".pdf":
         input_paths = [path_]
     elif path_.with_suffix(".pdf").exists():
         input_paths = [path_.with_suffix(".pdf")]
+    elif path_.with_suffix(".PDF").exists():
+        input_paths = [path_.with_suffix(".PDF")]
     else:
         raise FileNotFoundError(f"File {path_} does not exist.")
 
