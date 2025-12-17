@@ -51,7 +51,7 @@ def cli(
         input_paths = [p for p in path_.rglob("*") if p.suffix.lower() == ".pdf"]
         if len(input_paths) == 0:
             raise FileNotFoundError(f"No PDF files found in {path_}.")
-    elif path_.exists() and path_.suffix.lower() == ".pdf":
+    elif path_.exists():
         input_paths = [path_]
     elif path_.with_suffix(".pdf").exists():
         input_paths = [path_.with_suffix(".pdf")]
