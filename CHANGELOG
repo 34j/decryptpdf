@@ -8,7 +8,7 @@
 
 ### Features
 
-- Add support for exension being capital letters (".pdf") ([`6efd37b`](https://github.com/34j/decryptpdf/commit/6efd37b6161630aa6e80aee5fa21b12455de36de))
+- Add support for extension being capital letters (".pdf") ([`6efd37b`](https://github.com/34j/decryptpdf/commit/6efd37b6161630aa6e80aee5fa21b12455de36de))
 
 ## v1.0.0 (2025-06-15)
 
