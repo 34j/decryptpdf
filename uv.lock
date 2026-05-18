@@ -220,7 +220,7 @@ wheels = [
 
 [[package]]
 name = "click"
-version = "8.3.3"
+version = "8.4.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.12'",
@@ -230,9 +230,9 @@ resolution-markers = [
 dependencies = [
     { name = "colorama", marker = "python_full_version >= '3.10' and sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bb/63/f9e1ea081ce35720d8b92acde70daaedace594dc93b693c869e0d5910718/click-8.3.3.tar.gz", hash = "sha256:398329ad4837b2ff7cbe1dd166a4c0f8900c3ca3a218de04466f38f6497f18a2", size = 328061, upload-time = "2026-04-22T15:11:27.506Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/23/e4/796662cd90cf80e3a363c99db2b88e0e394b988a575f60a17e16440cd011/click-8.4.0.tar.gz", hash = "sha256:638f1338fe1235c8f4e008e4a8a254fb5c5fbdcbb40ece3c9142ebb78e792973", size = 350843, upload-time = "2026-05-17T00:47:58.425Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ae/44/c1221527f6a71a01ec6fbad7fa78f1d50dfa02217385cf0fa3eec7087d59/click-8.3.3-py3-none-any.whl", hash = "sha256:a2bf429bb3033c89fa4936ffb35d5cb471e3719e1f3c8a7c3fff0b8314305613", size = 110502, upload-time = "2026-04-22T15:11:25.044Z" },
+    { url = "https://files.pythonhosted.org/packages/ee/ae/8e92f8058baf87f6c7d86ee7e457668690195cc77efedb8d3797a06e3940/click-8.4.0-py3-none-any.whl", hash = "sha256:40c50b7c6c6adac2823d411041ec84f3f103f1b280d5e9ce0d7f998995832f81", size = 116147, upload-time = "2026-05-17T00:47:56.842Z" },
 ]
 
 [[package]]
@@ -492,7 +492,7 @@ version = "1.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "pikepdf", version = "9.11.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
-    { name = "pikepdf", version = "10.5.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "pikepdf", version = "10.6.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "rich" },
     { name = "tqdm" },
     { name = "typer", version = "0.23.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
@@ -593,11 +593,11 @@ wheels = [
 
 [[package]]
 name = "idna"
-version = "3.14"
+version = "3.15"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/05/b1/efac073e0c297ecf2fb33c346989a529d4e19164f1759102dee5953ee17e/idna-3.14.tar.gz", hash = "sha256:466d810d7a2cc1022bea9b037c39728d51ae7dad40d480fc9b7d7ecf98ba8ee3", size = 198272, upload-time = "2026-05-10T20:32:15.935Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/77/7b3966d0b9d1d31a36ddf1746926a11dface89a83409bf1483f0237aa758/idna-3.15.tar.gz", hash = "sha256:ca962446ea538f7092a95e057da437618e886f4d349216d2b1e294abfdb65fdc", size = 199245, upload-time = "2026-05-12T22:45:57.011Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6c/3c/3f62dee257eb3d6b2c1ef2a09d36d9793c7111156a73b5654d2c2305e5ce/idna-3.14-py3-none-any.whl", hash = "sha256:e677eaf072e290f7b725f9acf0b3a2bd55f9fd6f7c70abe5f0e34823d0accf69", size = 72184, upload-time = "2026-05-10T20:32:14.295Z" },
+    { url = "https://files.pythonhosted.org/packages/d2/23/408243171aa9aaba178d3e2559159c24c1171a641aa83b67bdd3394ead8e/idna-3.15-py3-none-any.whl", hash = "sha256:048adeaf8c2d788c40fee287673ccaa74c24ffd8dcf09ffa555a2fbb59f10ac8", size = 72340, upload-time = "2026-05-12T22:45:55.733Z" },
 ]
 
 [[package]]
@@ -911,14 +911,14 @@ wheels = [
 
 [[package]]
 name = "mdit-py-plugins"
-version = "0.6.0"
+version = "0.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markdown-it-py", version = "4.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d8/3d/e0e8d9d1cee04f758120915e2b2a3a07eb41f8cf4654b4734788a522bcd1/mdit_py_plugins-0.6.0.tar.gz", hash = "sha256:2436f14a7295837ac9228a36feeabda867c4abc488c8d019ad5c0bda88eee040", size = 56025, upload-time = "2026-05-07T12:20:42.295Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/59/fc/f8d0863f8862f25602c0404d75568e89fb6b4109804645e5cdfb1be5cf56/mdit_py_plugins-0.6.1.tar.gz", hash = "sha256:a2bca0f039f39dbd35fb74ae1b5f998608c437463371f0ff7f49a19a17a114d0", size = 56114, upload-time = "2026-05-13T09:03:38.91Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/71/d6/48f5b9e44e2e760855d7b489b1317cd7620e82dcb73197961e5cc1391348/mdit_py_plugins-0.6.0-py3-none-any.whl", hash = "sha256:f7e7a25d8b616fee99cb1e330da73451d11a8061baf39bb9663ab9ce0e005b90", size = 66655, upload-time = "2026-05-07T12:20:41.226Z" },
+    { url = "https://files.pythonhosted.org/packages/a5/69/6da5581c6a7fede7dc261bf4e67d6adca4196f176b43288b55b3db395b6e/mdit_py_plugins-0.6.1-py3-none-any.whl", hash = "sha256:214c82fb2ac524472ab6a5bcab1de80f73b50443e187f401bfd77efbc7c6481d", size = 66663, upload-time = "2026-05-13T09:03:37.76Z" },
 ]
 
 [[package]]
@@ -932,7 +932,7 @@ wheels = [
 
 [[package]]
 name = "myst-parser"
-version = "5.0.0"
+version = "5.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "docutils", marker = "python_full_version >= '3.11'" },
@@ -943,9 +943,9 @@ dependencies = [
     { name = "sphinx", version = "9.0.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
     { name = "sphinx", version = "9.1.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/33/fa/7b45eef11b7971f0beb29d27b7bfe0d747d063aa29e170d9edd004733c8a/myst_parser-5.0.0.tar.gz", hash = "sha256:f6f231452c56e8baa662cc352c548158f6a16fcbd6e3800fc594978002b94f3a", size = 98535, upload-time = "2026-01-15T09:08:18.036Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/21/dc/603751677fff302f34396e206b610f556a59d7fe58b9a2145f54e96b48e8/myst_parser-5.1.0.tar.gz", hash = "sha256:ab69322dc6719dcc7f296479dbb70181b66df6ed315064f92dbc85c0e1bf2f02", size = 101182, upload-time = "2026-05-13T09:38:19.361Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d3/ac/686789b9145413f1a61878c407210e41bfdb097976864e0913078b24098c/myst_parser-5.0.0-py3-none-any.whl", hash = "sha256:ab31e516024918296e169139072b81592336f2fef55b8986aa31c9f04b5f7211", size = 84533, upload-time = "2026-01-15T09:08:16.788Z" },
+    { url = "https://files.pythonhosted.org/packages/09/dc/f3dfb7488b770f3f67e6545085bf2abea5172e88f57b8ad25ef860ca704c/myst_parser-5.1.0-py3-none-any.whl", hash = "sha256:9c91c52b3cdb4d94a6506e4fab4e2f296c7623a0da0dcbe6de1565c3dad67a8a", size = 85817, upload-time = "2026-05-13T09:38:17.904Z" },
 ]
 
 [[package]]
@@ -1018,7 +1018,7 @@ wheels = [
 
 [[package]]
 name = "pikepdf"
-version = "10.5.1"
+version = "10.6.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.12'",
@@ -1031,43 +1031,43 @@ dependencies = [
     { name = "packaging", marker = "python_full_version >= '3.10'" },
     { name = "pillow", version = "12.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2c/66/32a45480d84cb239c7ad31209c956496fe5b20f6fb163d794db4c79f840c/pikepdf-10.5.1.tar.gz", hash = "sha256:ffa6c7d0b77deb3af9735e0b0cae177c897431e10d342bb171b62e5527a622b7", size = 4582470, upload-time = "2026-03-18T07:56:00.036Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cf/20/06636c3c7351d7292308e848700cd26a2092233093d4cabe770aaee73319/pikepdf-10.6.0.tar.gz", hash = "sha256:172611c32ab0a6097cfbccb397847b8e84d3f7bc7d32d5fc2f50e7e61f164725", size = 23670594, upload-time = "2026-05-14T16:22:27.099Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d1/64/ac8c86b4c62cc800b4840b584da77173e55f5c2103f538e4f64d6f3c3714/pikepdf-10.5.1-cp310-cp310-macosx_14_0_arm64.whl", hash = "sha256:ffb5b094ec62a2676d868ad35ed24a46c0dbefbd60ca58c7a2effb36066d49eb", size = 4761265, upload-time = "2026-03-18T07:54:54.272Z" },
-    { url = "https://files.pythonhosted.org/packages/6a/53/c07e4b95d4b1304498123415caa33163c4d32105d06d32c3af69dbcd1a7b/pikepdf-10.5.1-cp310-cp310-macosx_15_0_x86_64.whl", hash = "sha256:e95ad8a3414fb2ad3fd60dc7f3fa5cf4e23c88369dbae4402a9505b8ab1c3a48", size = 5073282, upload-time = "2026-03-18T07:54:56.568Z" },
-    { url = "https://files.pythonhosted.org/packages/eb/84/6e9f30be4b49e3418ab981bb4e0fa7e41345bce5d586ac7ec2f2b2aee9d5/pikepdf-10.5.1-cp310-cp310-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:147c9dd72f56050ecd9079fa689c053cd0aa16d56481b4f5af634cf39aab10fe", size = 2483154, upload-time = "2026-03-18T07:54:58.346Z" },
-    { url = "https://files.pythonhosted.org/packages/12/42/af6b6d68b0e2286945a6a0076c70c7e2d57938c168989ad2bc44fedcfd02/pikepdf-10.5.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:80556b69ac99abbcb7aa6fb9391d855226631c7ed8dc85d0ce9b2bcc8a14e810", size = 2715299, upload-time = "2026-03-18T07:55:00.131Z" },
-    { url = "https://files.pythonhosted.org/packages/76/40/2425914bcf48a3988fd92417cd82e18bb2fdb383269db60244efae4f5703/pikepdf-10.5.1-cp310-cp310-musllinux_1_2_aarch64.whl", hash = "sha256:372de88a099c1163a432972a888566f0123edf7d6521fa35286f82fd584597bd", size = 3688920, upload-time = "2026-03-18T07:55:02.019Z" },
-    { url = "https://files.pythonhosted.org/packages/e8/a9/bd2933adcfc7460792015d769168178a9f1ae60a0b4e3c0061d199a3d5d8/pikepdf-10.5.1-cp310-cp310-musllinux_1_2_x86_64.whl", hash = "sha256:b1cc0b3012268a53b749a3d40855e3b0249e275d07e4d9a1b628d3a16d805b35", size = 3891283, upload-time = "2026-03-18T07:55:03.726Z" },
-    { url = "https://files.pythonhosted.org/packages/d8/7a/dd98b185b35d3faa5ee595cf769562942e74864faf4cb5b6fb68c767f61e/pikepdf-10.5.1-cp310-cp310-win_amd64.whl", hash = "sha256:32108ac26bd787fc2d5148e0958b958086028315b48f7f42b081100de6090d75", size = 3803981, upload-time = "2026-03-18T07:55:05.709Z" },
-    { url = "https://files.pythonhosted.org/packages/6a/6e/755108ffa7fcb069440c2963e2ba898b9ddd6db5b39c29984dc0f3b39247/pikepdf-10.5.1-cp311-cp311-macosx_14_0_arm64.whl", hash = "sha256:6d182a507e24d03a0f47a75ea20ec2bc0bbc0224f95c0fce3805f7d626b39ae2", size = 4762486, upload-time = "2026-03-18T07:55:07.439Z" },
-    { url = "https://files.pythonhosted.org/packages/ca/4e/f26b27eb3f1c460a861c6b7ad7afc157b1d403f4fae0432b8c2406f2a784/pikepdf-10.5.1-cp311-cp311-macosx_15_0_x86_64.whl", hash = "sha256:e1e5f38f644bc966be6094d5c303c9e64cf576c7c5805dfef4272be0ff69a57f", size = 5075340, upload-time = "2026-03-18T07:55:09.769Z" },
-    { url = "https://files.pythonhosted.org/packages/9f/a5/3763bd07252f69220417cb57555877b0561e02093efa1451905641e54d6c/pikepdf-10.5.1-cp311-cp311-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:44c17a8e364135787b8982a0db182af750aba2ee413d0cc1e0b143de61cccc1a", size = 2485205, upload-time = "2026-03-18T07:55:11.768Z" },
-    { url = "https://files.pythonhosted.org/packages/24/3e/d546f3ebeac51cb1e3a949a11bd2b92528b290c92f30464e26db9bb0dba5/pikepdf-10.5.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:1e78d638c820f464c3f02650a02833f12b98c6799695effd9d0d4611a390921f", size = 2717709, upload-time = "2026-03-18T07:55:13.306Z" },
-    { url = "https://files.pythonhosted.org/packages/7a/03/edcc3bd696e1e3a8e414c6f9f969a3e2cbcc97e055c1daafc98676d5d019/pikepdf-10.5.1-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:45569f23d4ae6157ee7c140f467555b3132517ae5fec63aedbd93c57740152d7", size = 3690537, upload-time = "2026-03-18T07:55:14.893Z" },
-    { url = "https://files.pythonhosted.org/packages/be/3b/f82d70827ac6a4436df21b6f72bae2946c246a4838aae40e6231c697021d/pikepdf-10.5.1-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:5799d75141f331b2f3324d218efe10fa52677f71d0ec73d308961c0448e571ba", size = 3895585, upload-time = "2026-03-18T07:55:16.86Z" },
-    { url = "https://files.pythonhosted.org/packages/ce/46/faa4483808ecd87720ce704d47931812b05fbe1c5f4bae6c7705f5b09874/pikepdf-10.5.1-cp311-cp311-win_amd64.whl", hash = "sha256:f243bf46f556261d27dc73131954e16a1869700dbea697780a2572cf5ad7ef44", size = 3804998, upload-time = "2026-03-18T07:55:18.533Z" },
-    { url = "https://files.pythonhosted.org/packages/71/c8/f0c8ea17555e6bfffa5f598988edc9f1c5861f9909ca72ee745362958453/pikepdf-10.5.1-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:03665c0d3658f4bb6084dd65d2db3a44f5af2ef0cd005cbb2ef0af82bcad8c83", size = 4772405, upload-time = "2026-03-18T07:55:20.562Z" },
-    { url = "https://files.pythonhosted.org/packages/b8/90/9c201894f8a27a2dad1b6dce92dd497e785e81f4f902f2e261ee04e8c1d6/pikepdf-10.5.1-cp312-cp312-macosx_15_0_x86_64.whl", hash = "sha256:141dab118d6462abf9324f3fe79f18f597db75c6ac96e90984b65f5544e540a3", size = 5089114, upload-time = "2026-03-18T07:55:22.298Z" },
-    { url = "https://files.pythonhosted.org/packages/c9/e1/2a0f82254265d432ee0b7323cf897fcbc062f8036853a0353ced58cb5521/pikepdf-10.5.1-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:c5d5d0fbfd54acfce3496693f1378d0a0c43025ad96abeb2ffe466737bddaaa0", size = 2491105, upload-time = "2026-03-18T07:55:23.899Z" },
-    { url = "https://files.pythonhosted.org/packages/92/23/2d56b5a478aa62d5b1307aa273ca3bb67ac7db7f948708e3ab9dba9eb6b4/pikepdf-10.5.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:d3246732f3733dee4048c69a2141c2c0a80af7c9e1d31f35222d6d0d108e3678", size = 2735333, upload-time = "2026-03-18T07:55:25.527Z" },
-    { url = "https://files.pythonhosted.org/packages/a6/dd/9678100282f538e5804eb80d885cf0131b1a7a36ca6acbb204858c52c6bd/pikepdf-10.5.1-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:1580124500a328444c68b8b82ba9bf6166c31e02c5e4924e4bbcea2a8d2e7ee0", size = 3700125, upload-time = "2026-03-18T07:55:27.48Z" },
-    { url = "https://files.pythonhosted.org/packages/88/2b/70e9ee1257b9f0010083bd3d9a51e648749284892ad3bb9e3a8691799953/pikepdf-10.5.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:bc2b338a157c8aabafd8ecc7f2aab15e45bf2dcd0ebfe388ffff4fb4147a9e97", size = 3908975, upload-time = "2026-03-18T07:55:29.232Z" },
-    { url = "https://files.pythonhosted.org/packages/ad/b0/87cc2fbdcd8ce0a8aeace28c52b0f2acc56cc19a064ec514ed80f246f891/pikepdf-10.5.1-cp312-cp312-win_amd64.whl", hash = "sha256:b220200d96bcaec722c8c8e4a96037515c9d212775587b588fafe692c630a89e", size = 3812237, upload-time = "2026-03-18T07:55:31.285Z" },
-    { url = "https://files.pythonhosted.org/packages/7f/d4/eb00bb96b383a1dd3151d347a6339408af642d75ed998f8ac7368ddf5bcd/pikepdf-10.5.1-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:0b30d192baf0132e6d945e8b2200288bd32f2b0ec2357b1fe414ef595531b181", size = 4772545, upload-time = "2026-03-18T07:55:33.251Z" },
-    { url = "https://files.pythonhosted.org/packages/42/6f/f25b9e66afd647cd090d0e62a5287135ec0ae4971b2f1601a1e3dad96fa9/pikepdf-10.5.1-cp313-cp313-macosx_15_0_x86_64.whl", hash = "sha256:d59a710ba6fc5a5220ac59dba4bd43612663a2fde33973a616843bc79eaf0fac", size = 5088950, upload-time = "2026-03-18T07:55:35.222Z" },
-    { url = "https://files.pythonhosted.org/packages/69/9e/f2781afe47f149f88b1c2a3e72a0f2501fcc104c23bffb2e68c89ec81ea7/pikepdf-10.5.1-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:5f245df7aeb1a69c166e923ceae9bf47c895a06286dcb94a92225f1b10156e6f", size = 2490804, upload-time = "2026-03-18T07:55:37.247Z" },
-    { url = "https://files.pythonhosted.org/packages/9a/77/f87710f01d74dfe8d3713cfe682b350c77aa7a5443552fffceb7b3b40543/pikepdf-10.5.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:7e1cdfdeec93a6eca49e6ce592269fd78007d13440719d6f95f3a5a33e609d9f", size = 2734878, upload-time = "2026-03-18T07:55:39.061Z" },
-    { url = "https://files.pythonhosted.org/packages/7b/b1/b350dc5cf82de45c0c1c79fd01384b0af07e3ba82da77e276bc98ca00489/pikepdf-10.5.1-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:b21b093335069d79eecf8639b150e6100043b1275ffdeb00501640d2bcbdf760", size = 3699375, upload-time = "2026-03-18T07:55:40.984Z" },
-    { url = "https://files.pythonhosted.org/packages/2c/5e/f7c7473c36687d453bede6afb0a4d8fb0ebb2e846f35219db12542889df1/pikepdf-10.5.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:89cc87b440f663f1e4f51670930f0aa310cec30cc02d9a1c36a61432be9380fd", size = 3908458, upload-time = "2026-03-18T07:55:43.051Z" },
-    { url = "https://files.pythonhosted.org/packages/38/4a/b2949669f3eaae08cc32d21b13f505ebbcabb0d7dd8808fdf743a9eb69ae/pikepdf-10.5.1-cp313-cp313-win_amd64.whl", hash = "sha256:d10f915c80881be4802204a54ba3ce5ee9e13dd59aa6fbe4cb95230039defa86", size = 3812315, upload-time = "2026-03-18T07:55:44.829Z" },
-    { url = "https://files.pythonhosted.org/packages/3c/48/b513468b4a5c7d4d9007c2c9b59686d15cca88c339225e4f2069c15799f9/pikepdf-10.5.1-cp314-cp314-macosx_14_0_arm64.whl", hash = "sha256:ac7a96d6e4a23cd2dfc07f2cec9f55b000fcd4be4be888dbbe5a767dcd4c409e", size = 4770764, upload-time = "2026-03-18T07:55:46.597Z" },
-    { url = "https://files.pythonhosted.org/packages/2d/42/da2abc72d0d04b48158b6bccad6e31dfd2cef63f501cdb6192af100d7545/pikepdf-10.5.1-cp314-cp314-macosx_15_0_x86_64.whl", hash = "sha256:1b81fd3f3de40ec4ad87fe9337d91e5f1301d4c4450ff02f4aa581c76609a3b7", size = 5089799, upload-time = "2026-03-18T07:55:48.45Z" },
-    { url = "https://files.pythonhosted.org/packages/1d/47/19731ef57be6007fb5007438618d6803d7abb4adaa095e55a8e7bd5cfa25/pikepdf-10.5.1-cp314-cp314-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:781ee394f38ebdf412dc674a1e3333a844dbab673d4d8db04050055062b8fa8d", size = 2493677, upload-time = "2026-03-18T07:55:50.219Z" },
-    { url = "https://files.pythonhosted.org/packages/25/87/3e115b7a47c3a5bb3a58a7ba51de20d4964393735fab0085fc94a979113b/pikepdf-10.5.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:17e6a136b870424e66167035406662842783049ee14262f49ed2572caa584475", size = 2736452, upload-time = "2026-03-18T07:55:52.266Z" },
-    { url = "https://files.pythonhosted.org/packages/ae/2b/f30006c28b58a12116561fe4fe62c9cd630e97a88de799c27a3073c6bb55/pikepdf-10.5.1-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:c9ae38d8dd7acf1b4c9bcd9a38fb75735bc62049c34634b1899e47068b314c5f", size = 3702958, upload-time = "2026-03-18T07:55:54.294Z" },
-    { url = "https://files.pythonhosted.org/packages/83/47/d467f13394c3be1c57b0fbc4264a8f0d1f6ae42ae61299c4695a89b2d983/pikepdf-10.5.1-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:013411404eb129b8d0cd565ce09c4f99254b9837a8e66f90d150b7c1f23a7124", size = 3910716, upload-time = "2026-03-18T07:55:56.233Z" },
-    { url = "https://files.pythonhosted.org/packages/5c/b5/7753d726905f217b78e677fee82e877a6880bc326db3a13c1934884ed54b/pikepdf-10.5.1-cp314-cp314-win_amd64.whl", hash = "sha256:70d1b5ae2e61ab5a08e2c978d18208766d5aa0747a2181c95d6e3acaa114f278", size = 3923717, upload-time = "2026-03-18T07:55:58.16Z" },
+    { url = "https://files.pythonhosted.org/packages/a4/e1/0da2e7373faaebb3f2e56de4780cf980ff5d752b5f98940503b1f84c3bb2/pikepdf-10.6.0-cp310-cp310-macosx_14_0_arm64.whl", hash = "sha256:f5db4eb68af9804bc52faa88e20de6049f3285abec65e29c9f7f5f52224954b3", size = 4369694, upload-time = "2026-05-14T16:21:07.253Z" },
+    { url = "https://files.pythonhosted.org/packages/80/70/170a82124ca0c8ddc9c25a18d6dba0c935a1dda3389583072d892f5a025f/pikepdf-10.6.0-cp310-cp310-macosx_15_0_x86_64.whl", hash = "sha256:a16f950051321956a8f4d42f6334e8d2420da2863bc80a6468eb7ee7ecbc20aa", size = 4686468, upload-time = "2026-05-14T16:21:11.088Z" },
+    { url = "https://files.pythonhosted.org/packages/28/0a/677a6021f2234e46d28ebe0c514be28e3cab7e9314991a4d9eae5e77ba42/pikepdf-10.6.0-cp310-cp310-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:71f957400ececf5435247df033afaad31d02954a8e639e1e7c11e34d1397db6f", size = 1941726, upload-time = "2026-05-14T16:21:12.814Z" },
+    { url = "https://files.pythonhosted.org/packages/a3/96/ecb0c15f51dff181e5a8f5e08883c1b86b1a65e95c2f4579e53539493c91/pikepdf-10.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:26ff794d9ac5a6440affc3301a91118e255e1ff44bd301a02043115a1900b0f4", size = 2131781, upload-time = "2026-05-14T16:21:14.914Z" },
+    { url = "https://files.pythonhosted.org/packages/38/54/f1ae548bb39f76c684eea08d0a56921446fa7e75d927c207d0aa8e31e803/pikepdf-10.6.0-cp310-cp310-musllinux_1_2_aarch64.whl", hash = "sha256:1567a50000dc54b9bd53d079563bf40a41111482857c497bacea5ac73cd9b4bf", size = 3580757, upload-time = "2026-05-14T16:21:17.346Z" },
+    { url = "https://files.pythonhosted.org/packages/16/69/9aaa3574fd090a959efd98fc8563254f89ea8ce3c150cae111c3994f60f9/pikepdf-10.6.0-cp310-cp310-musllinux_1_2_x86_64.whl", hash = "sha256:14677dcbe49717c5bcaaa43f353447744a2d3362eb47c9f255d21ee2b5645623", size = 3776584, upload-time = "2026-05-14T16:21:19.418Z" },
+    { url = "https://files.pythonhosted.org/packages/96/58/19759d3cef1101cd15cc9581fb44493eabb7f5bed0a6282b25bbe8c5ec35/pikepdf-10.6.0-cp310-cp310-win_amd64.whl", hash = "sha256:59cbb4b6b62ccbb51abc6d537d5328fd45b4e1fdc35247b0a990e8019ee68bfa", size = 3242905, upload-time = "2026-05-14T16:21:21.402Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/26/764fe0b5e4b2b9d1dbee361c7da3f790fcf807a979fb9bc7348ef8efec12/pikepdf-10.6.0-cp311-cp311-macosx_14_0_arm64.whl", hash = "sha256:1874beb5761fef5063592c3dc147026bf878fcfa4cb49d8715dc9ed0ca778d85", size = 4370013, upload-time = "2026-05-14T16:21:23.708Z" },
+    { url = "https://files.pythonhosted.org/packages/f4/a4/0f82e708d457005e51a22fe3a8b6629c9f291f29488a4f124404d8687341/pikepdf-10.6.0-cp311-cp311-macosx_15_0_x86_64.whl", hash = "sha256:2b69620e63252a80bbe191f8ea7b898fff059d7387fcd76b4a263734ded2f9c3", size = 4686951, upload-time = "2026-05-14T16:21:25.608Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/d6/aa4f8b4b1f56d5a1c4a9f186bbf7ff7cdbaf92c577e46044321c630fb022/pikepdf-10.6.0-cp311-cp311-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:cdea20d3a354aa793dc5c58cfe434c355d776fc62baf17431db778bedbd52a00", size = 1942151, upload-time = "2026-05-14T16:21:28.095Z" },
+    { url = "https://files.pythonhosted.org/packages/94/11/faa8c71fc9c2cd77b0485c37ed202f107a42764cf2a41e17adbfa6f05c6a/pikepdf-10.6.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:82c38aa4e3bca73d1e37ac2306db44fdf3d61caae0047bfdae524f01a01e2896", size = 2132059, upload-time = "2026-05-14T16:21:30.241Z" },
+    { url = "https://files.pythonhosted.org/packages/b0/3f/18efbdc3710d50e412a954f16de54bfa7abaa323f606e503a08f16c93e9a/pikepdf-10.6.0-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:d9202eb9f49843a93d28be7cf29e9bb9c423bbd4029bf55c530869888a132a7c", size = 3581202, upload-time = "2026-05-14T16:21:32.428Z" },
+    { url = "https://files.pythonhosted.org/packages/a1/74/4df4bbbb7f1e78aa39074fc878c6cea5f54651530bf85d28a9987b58d892/pikepdf-10.6.0-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:8e5d4cb93c68e8b3d58ecfbfc4e93d3ef9874348e5f390acf247daa2851b5c50", size = 3776772, upload-time = "2026-05-14T16:21:34.823Z" },
+    { url = "https://files.pythonhosted.org/packages/91/a6/a12db11a702f086cf58f20d9dfa8c5fa05446336c189742ac01f9007d87a/pikepdf-10.6.0-cp311-cp311-win_amd64.whl", hash = "sha256:8fdaef50f6d8555b9edd0f5f62f8e77030a5eedb8e8e1ed12c533263a29cecf2", size = 3242948, upload-time = "2026-05-14T16:21:36.751Z" },
+    { url = "https://files.pythonhosted.org/packages/6d/54/892884d0b36816087c80f7feef360168f6f4bd2387c19abf0497f4aa09e6/pikepdf-10.6.0-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:3795c78304abea6d41384a26b2eb14cdedb05c64919da977c5d36c4bf54e5452", size = 4369370, upload-time = "2026-05-14T16:21:39.369Z" },
+    { url = "https://files.pythonhosted.org/packages/8b/4f/99eb30942bae14295a02af63fdeed48932a3205a680716c25a0e315dce1f/pikepdf-10.6.0-cp312-cp312-macosx_15_0_x86_64.whl", hash = "sha256:e20a502f35e2c2ecd7df390ba890c73317845e9bd298c688f0b312116f419761", size = 4687951, upload-time = "2026-05-14T16:21:41.361Z" },
+    { url = "https://files.pythonhosted.org/packages/5f/6e/e12aa3128c3d6b1c952b1351d1c2b5d19f98eaacda05e5c20620c4b49e19/pikepdf-10.6.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:520748239e5e2919ea7b0e148de3939473ac6a687d1a6b2d32f10d99b05bd2ff", size = 1942636, upload-time = "2026-05-14T16:21:43.74Z" },
+    { url = "https://files.pythonhosted.org/packages/2a/71/c732fb5b8b9953556b56bb504d57bbd622c86f78d9747666f17b3f2911eb/pikepdf-10.6.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:8122e4945b7450d61cc693f0f8accfdc4b0273122a7d0ad9c3e1e60ef65fcab0", size = 2131880, upload-time = "2026-05-14T16:21:45.56Z" },
+    { url = "https://files.pythonhosted.org/packages/b2/a2/f7be1ecd69a1070efd63b8fcf76b70a08dd54a87100fcc00ccdd8801cdd0/pikepdf-10.6.0-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:a144ef5fac0569dc9600d6e807a0bf8a8e86b38bc0bcc146f5ebefca41d7a00e", size = 3581013, upload-time = "2026-05-14T16:21:47.76Z" },
+    { url = "https://files.pythonhosted.org/packages/0a/94/f61ba738b28ef52ad662a04c3ebcb40cfc70162174fbddd6bf4450196a55/pikepdf-10.6.0-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:411292f912431e52adab742ddc5626e7f9f1aa2f1fc6d3542ec520078946f3ff", size = 3776849, upload-time = "2026-05-14T16:21:49.698Z" },
+    { url = "https://files.pythonhosted.org/packages/03/b1/9a2fdd37134d0a9457339c1506c788731225e0208e0f3bf1667da3955368/pikepdf-10.6.0-cp312-cp312-win_amd64.whl", hash = "sha256:e14563fe50abb106f1cf57a10dbc175b14c616b32f086a899288546443c7b7b8", size = 3244124, upload-time = "2026-05-14T16:21:51.875Z" },
+    { url = "https://files.pythonhosted.org/packages/31/17/d3df0465ab9333298a1d7f37159b76805b7994db940fc6eb70efb8df6ef2/pikepdf-10.6.0-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:8e7010aa74a0385fe29e868a821284e9048813bc3581dcf3dd5903084a91dfbe", size = 4369145, upload-time = "2026-05-14T16:21:54.345Z" },
+    { url = "https://files.pythonhosted.org/packages/33/07/416865feabb8f3f61fa8e4e83de78bc6be8307fa7b0de4de2984bca96051/pikepdf-10.6.0-cp313-cp313-macosx_15_0_x86_64.whl", hash = "sha256:69419622338d2bdb655ff90da79b284fd368900b0f47a788ca68412d38af9cf7", size = 4687985, upload-time = "2026-05-14T16:21:57.461Z" },
+    { url = "https://files.pythonhosted.org/packages/9f/90/2aae045ae7aea8921e81290114ba614ca056d91f28ce11188c7d1348738f/pikepdf-10.6.0-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:4c5209a9eb3d0a82a5916af27786af716367fa58acdda88eca64f9b69ce4d889", size = 1942095, upload-time = "2026-05-14T16:21:59.465Z" },
+    { url = "https://files.pythonhosted.org/packages/68/3b/643c4ea743df59f0efbfce153c24b0f5b15216500ace4c4cda4e006a4d68/pikepdf-10.6.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:4c0396bdfb845386c6be70fcf48146b530b13d4d6260377b9fda4317cb32482f", size = 2131736, upload-time = "2026-05-14T16:22:01.55Z" },
+    { url = "https://files.pythonhosted.org/packages/46/80/3dc5f552e4f41bacf35b9d5b50bd961efc5418782132cc392904f9f7f34d/pikepdf-10.6.0-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:94a03e3cd4f82f47846f3cfa6758ff422ecd4368da33f6cdd64f856e2b5b0cfd", size = 3580709, upload-time = "2026-05-14T16:22:03.7Z" },
+    { url = "https://files.pythonhosted.org/packages/48/95/957e1931ab4b3a7fd138943b52b21099067e6412cf5f9c6d239dc428e09b/pikepdf-10.6.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:43a7e3111cdb7ff3ecd7a39620e02c3192e134623be75fbf8b988eb905509b0a", size = 3776673, upload-time = "2026-05-14T16:22:05.807Z" },
+    { url = "https://files.pythonhosted.org/packages/8e/cd/f84e99e0295e077966176a12b8e7c9060df27398449cf9861423f2d20bbd/pikepdf-10.6.0-cp313-cp313-win_amd64.whl", hash = "sha256:f377c90a3db289b244c7a55990a1b98bf68735c06b81a531e2b3f9585d22d446", size = 3244002, upload-time = "2026-05-14T16:22:07.986Z" },
+    { url = "https://files.pythonhosted.org/packages/4e/b6/46abf492b0b313545c6ff4b36109a1feb974c1174b72fece5141bf28c149/pikepdf-10.6.0-cp314-cp314-macosx_14_0_arm64.whl", hash = "sha256:ab038cacfc0a575209a13b01ea8bdc74170a87eaa83bd1fc515cd210714046d2", size = 4369557, upload-time = "2026-05-14T16:22:10.168Z" },
+    { url = "https://files.pythonhosted.org/packages/c0/68/fb05fba206b59f91de3c42fbc92d832c213ef787af8901ac2d8c0ada9cb1/pikepdf-10.6.0-cp314-cp314-macosx_15_0_x86_64.whl", hash = "sha256:0a1e77dacfa7d73c2852a6299d90be5ca33faf59dcc3c0c7e440afe0bdeb324e", size = 4687932, upload-time = "2026-05-14T16:22:12.268Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/f7/f7c73e0c33f0f9af548e918ce1a9048e226629f65446782e702c739b023b/pikepdf-10.6.0-cp314-cp314-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:5e93c66e5be71ee01b6983d66f4e7585d67883662d9e0def1eed273b98359845", size = 1942836, upload-time = "2026-05-14T16:22:14.74Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/bf/9906fcd7a7289c25ae643df394610f522f2564543b3ffc1387767395659e/pikepdf-10.6.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:428774c394abb39a6743071d822aeaef5d5017033bf47707c5da253592fb01ef", size = 2131728, upload-time = "2026-05-14T16:22:17.048Z" },
+    { url = "https://files.pythonhosted.org/packages/f7/55/dd29648b340599328bae7d6e82d7cdd00a8ae692d6441e9c3c842110771d/pikepdf-10.6.0-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:8f4a817f883a8be0e22f33caab8666f1b755f87f9ea06a56a5a938b1579c88e0", size = 3581662, upload-time = "2026-05-14T16:22:19.372Z" },
+    { url = "https://files.pythonhosted.org/packages/0f/f1/4c3d4238ae829f7b5be1d2dadaaebce89808cf7906c81aabe9be595b1f82/pikepdf-10.6.0-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:43115caaa83a69d334a8cf7db447f878e7bb219535ee08fbeb354e1157e8c9c8", size = 3776486, upload-time = "2026-05-14T16:22:21.497Z" },
+    { url = "https://files.pythonhosted.org/packages/0f/68/f3167f8c54f736abfc93ed85aa4dccb662c846778f0c480c245425342624/pikepdf-10.6.0-cp314-cp314-win_amd64.whl", hash = "sha256:5a3f821efd81e3c687fb295b76caffb46cae619bc8c1d10dc8ae780cd0921179", size = 3243783, upload-time = "2026-05-14T16:22:23.673Z" },
 ]
 
 [[package]]
@@ -1416,7 +1416,7 @@ wheels = [
 
 [[package]]
 name = "requests"
-version = "2.33.1"
+version = "2.34.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi", marker = "python_full_version >= '3.11'" },
@@ -1424,9 +1424,9 @@ dependencies = [
     { name = "idna", marker = "python_full_version >= '3.11'" },
     { name = "urllib3", marker = "python_full_version >= '3.11'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5f/a4/98b9c7c6428a668bf7e42ebb7c79d576a1c3c1e3ae2d47e674b468388871/requests-2.33.1.tar.gz", hash = "sha256:18817f8c57c6263968bc123d237e3b8b08ac046f5456bd1e307ee8f4250d3517", size = 134120, upload-time = "2026-03-30T16:09:15.531Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ac/c3/e2a2b89f2d3e2179abd6d00ebd70bff6273f37fb3e0cc209f48b39d00cbf/requests-2.34.2.tar.gz", hash = "sha256:f288924cae4e29463698d6d60bc6a4da69c89185ad1e0bcc4104f584e960b9ed", size = 142856, upload-time = "2026-05-14T19:25:27.735Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d7/8e/7540e8a2036f79a125c1d2ebadf69ed7901608859186c856fa0388ef4197/requests-2.33.1-py3-none-any.whl", hash = "sha256:4e6d1ef462f3626a1f0a0a9c42dd93c63bad33f9f1c1937509b8c5c8718ab56a", size = 64947, upload-time = "2026-03-30T16:09:13.83Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl", hash = "sha256:2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0", size = 73075, upload-time = "2026-05-14T19:25:26.443Z" },
 ]
 
 [[package]]
@@ -1734,7 +1734,7 @@ resolution-markers = [
 ]
 dependencies = [
     { name = "annotated-doc", marker = "python_full_version >= '3.10'" },
-    { name = "click", version = "8.3.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "click", version = "8.4.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "rich", marker = "python_full_version >= '3.10'" },
     { name = "shellingham", marker = "python_full_version >= '3.10'" },
 ]
@@ -1763,15 +1763,15 @@ wheels = [
 
 [[package]]
 name = "uvicorn"
-version = "0.46.0"
+version = "0.47.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "click", version = "8.3.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "click", version = "8.4.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "h11", marker = "python_full_version >= '3.11'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1f/93/041fca8274050e40e6791f267d82e0e2e27dd165627bd640d3e0e378d877/uvicorn-0.46.0.tar.gz", hash = "sha256:fb9da0926999cc6cb22dc7cd71a94a632f078e6ae47ff683c5c420750fb7413d", size = 88758, upload-time = "2026-04-23T07:16:00.151Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f6/b1/8e7077a8641086aea449e1b5752a570f1b5906c64e0a33cd6d93b63a066b/uvicorn-0.47.0.tar.gz", hash = "sha256:7c9a0ea1a9414106bbab7324609c162d8fa0cdcdcb703060987269d77c7bb533", size = 90582, upload-time = "2026-05-14T18:16:54.455Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/31/a3/5b1562db76a5a488274b2332a97199b32d0442aca0ed193697fd47786316/uvicorn-0.46.0-py3-none-any.whl", hash = "sha256:bbebbcbed972d162afca128605223022bedd345b7bc7855ce66deb31487a9048", size = 70926, upload-time = "2026-04-23T07:15:58.355Z" },
+    { url = "https://files.pythonhosted.org/packages/15/41/ac2dfdbc1f60c7af4f994c7a335cfa7040c01642b605d65f611cecc2a1e4/uvicorn-0.47.0-py3-none-any.whl", hash = "sha256:2c5715bc12d1892d84752049f400cd1c3cb018514967fdfeb97640443a6a9432", size = 71301, upload-time = "2026-05-14T18:16:51.762Z" },
 ]
 
 [[package]]
