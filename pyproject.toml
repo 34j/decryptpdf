@@ -48,40 +48,7 @@ docs = [
 ]
 
 [tool.ruff]
-line-length = 88
-lint.select = [
-  "B",   # flake8-bugbear
-  "C4",  # flake8-comprehensions
-  "D",   # flake8-docstrings
-  "E",   # pycodestyle
-  "F",   # pyflake
-  "I",   # isort
-  "RUF", # ruff specific
-  "S",   # flake8-bandit
-  "UP",  # pyupgrade
-  "W",   # pycodestyle
-]
-lint.ignore = [
-  "D100", # Missing docstring in public module
-  "D104", # Missing docstring in public package
-  "D107", # Missing docstring in `__init__`
-  "D203", # 1 blank line required before class docstring
-  "D212", # Multi-line docstring summary should start at the first line
-  "D401", # First line of docstring should be in imperative mood
-]
-lint.per-file-ignores."conftest.py" = [ "D100" ]
-lint.per-file-ignores."docs/conf.py" = [ "D100" ]
-lint.per-file-ignores."setup.py" = [ "D100" ]
-lint.per-file-ignores."tests/**/*" = [
-  "D100",
-  "D101",
-  "D102",
-  "D103",
-  "D104",
-  "RUF100",
-  "S101",
-]
-lint.isort.known-first-party = [ "decryptpdf", "tests" ]
+extend = ".venv/ruff.toml"
 
 [tool.pyproject-fmt]
 max_supported_python = "3.14"

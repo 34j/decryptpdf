@@ -47,5 +47,5 @@ def test_not_encrypted() -> None:
     with TemporaryDirectory() as dirname:
         filename = Path(dirname, "test.pdf")
         pikepdf.new().save(filename)
-        with pytest.raises(ValueError):
+        with pytest.raises(ValueError, match="is not encrypted"):
             decrypt_pdf(filename, filename, "user_password")
