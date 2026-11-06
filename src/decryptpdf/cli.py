@@ -1,6 +1,7 @@
 from pathlib import Path
 from typing import Annotated
 
+import pikepdf
 import typer
 from tqdm import tqdm
 
@@ -26,13 +27,13 @@ def cli(
             help="The password to decrypt the PDF file.",
         ),
     ],
+    *,
     overwrite: Annotated[
         bool,
         typer.Option(
             "-o/-n",
             "--overwrite/--no-overwrite",
-            help="Overwrite the original file, "
-            "or save decrypted file as .decrypted.pdf",
+            help="Overwrite the original file, or save decrypted file as .decrypted.pdf",
         ),
     ] = True,
 ) -> None:
@@ -42,6 +43,10 @@ def cli(
     If PATH is a directory, recursively searches for PDF files.
     If PATH is a file and does not exist, checks if PATH with ".pdf" extension exists.
     If the file is not encrypted, skips it.
+
+    Raises:
+        FileNotFoundError: If PATH does not identify any PDF files.
+
     """
     path_ = Path(path)
 
@@ -62,11 +67,8 @@ def cli(
 
     pbar = tqdm(input_paths, desc="Decrypting PDF files", disable=len(input_paths) == 1)
     for input_path in pbar:
-        if overwrite:
-            output_path = input_path
-        else:
-            output_path = input_path.with_suffix(".decrypted.pdf")
+        output_path = input_path if overwrite else input_path.with_suffix(".decrypted.pdf")
         try:
             decrypt_pdf(input_path, output_path, password)
-        except Exception as e:
-            pbar.write(f"Failed to decrypt {input_path}: {e}")
+        except (OSError, ValueError, pikepdf.PikepdfError) as error:
+            pbar.write(f"Failed to decrypt {input_path}: {error}")

@@ -5,7 +5,12 @@ import pikepdf
 
 
 def decrypt_pdf(input_path: Path, output_path: Path, password: str) -> None:
-    """Decrypts a PDF file."""
+    """Decrypt a PDF file.
+
+    Raises:
+        ValueError: If the PDF is not encrypted.
+
+    """
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", UserWarning)
         pdf = pikepdf.open(input_path, password=password, allow_overwriting_input=True)
