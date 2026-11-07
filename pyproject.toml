@@ -27,7 +27,7 @@ dependencies = [
   "pikepdf>=9.8.1",
   "rich>=10",
   "tqdm>=4.67.1",
-  "typer>=0.15,<1",
+  "typer>=0.28.0,<1",
 ]
 urls."Bug Tracker" = "https://github.com/34j/decryptpdf/issues"
 urls.Changelog = "https://github.com/34j/decryptpdf/blob/main/CHANGELOG.md"
