@@ -49,6 +49,7 @@ docs = [
 
 [tool.ruff]
 extend = ".venv/ruff.toml"
+lint.per-file-ignores."tests/**/*" = [ "S603" ]
 
 [tool.pyproject-fmt]
 max_supported_python = "3.14"
