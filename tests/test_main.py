@@ -49,3 +49,26 @@ def test_not_encrypted() -> None:
         pikepdf.new().save(filename)
         with pytest.raises(ValueError, match="is not encrypted"):
             decrypt_pdf(filename, filename, "user_password")
+
+
+def test_command_failure_exit_code() -> None:
+    with TemporaryDirectory() as dirname:
+        filename = Path(dirname, "plain.pdf")
+        pikepdf.new().save(filename)
+        runner = CliRunner()
+        result = runner.invoke(app, [filename.as_posix(), "-p", "user_password"])
+        assert result.exit_code == 1
+        assert "Failed to decrypt" in result.output
+
+
+def test_command_wrong_password_exit_code() -> None:
+    with TemporaryDirectory() as dirname:
+        filename = Path(dirname, "locked.pdf")
+        pikepdf.new().save(
+            filename,
+            encryption=pikepdf.Encryption(owner="owner_password", user="user_password"),
+        )
+        runner = CliRunner()
+        result = runner.invoke(app, [filename.as_posix(), "-p", "wrong_password"])
+        assert result.exit_code == 1
+        assert "Failed to decrypt" in result.output
