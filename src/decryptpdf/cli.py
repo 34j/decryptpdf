@@ -66,9 +66,13 @@ def cli(
         raise FileNotFoundError(f"File {path_} does not exist.")
 
     pbar = tqdm(input_paths, desc="Decrypting PDF files", disable=len(input_paths) == 1)
+    failed = 0
     for input_path in pbar:
         output_path = input_path if overwrite else input_path.with_suffix(".decrypted.pdf")
         try:
             decrypt_pdf(input_path, output_path, password)
         except (OSError, ValueError, pikepdf.PikepdfError) as error:
+            failed += 1
             pbar.write(f"Failed to decrypt {input_path}: {error}")
+    if failed:
+        raise typer.Exit(code=1)
