@@ -9,7 +9,7 @@ on:
 
 jobs:
   labels:
-    uses: 34j/.github/.github/workflows/labels.yml@b2cda1ee6a021b96107ec82577111ec6df44e5ad # main
+    uses: 34j/.github/.github/workflows/labels.yml@21c74bd854132f25bd2cccb16f10cf1896f1d99a # main
     permissions:
       contents: read
       issues: write
