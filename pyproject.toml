@@ -24,7 +24,7 @@ classifiers = [
   "Topic :: Software Development :: Libraries",
 ]
 dependencies = [
-  "pikepdf>=9.8.1",
+  "pikepdf>=9.11.0",
   "rich>=10",
   "tqdm>=4.67.1",
   "typer>=0.15,<1",
